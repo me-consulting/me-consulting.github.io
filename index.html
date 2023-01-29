@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Mario Ernst - IT Consulting / Full Stack Development</title>
+    <title>Mario Ernst - IT Consulting und Full Stack Development</title>
     <!-- <base href="/"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,10 +14,14 @@
       name="description"
       content="IT Consulting and Full Stack Development"
     />
-    <meta name="keywords" content="IT Consulting, Full Stack Development" />
+    <meta
+      name="keywords"
+      content="IT Consulting, Full Stack Development, Softwarearchitektur"
+    />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Mario Ernst">
+    <meta name="author" content="Mario Ernst" />
+    <meta name="revisit-after" content="7 days" />
 
     <link
       rel="apple-touch-icon-precomposed"
@@ -161,6 +165,19 @@
       margin: 0 auto;
       font-family: "Lato", Helvetica, sans-serif;
     }
+
+    .xxx {
+      display: flex;
+      gap: 40px;
+      max-width: 800px;
+      align-self: center;
+    }
+
+    @media (max-width: 600px) {
+      .xxx {
+        flex-direction: column;
+      }
+    }
   </style>
   <body>
     <main>
@@ -189,16 +206,62 @@
           <img src="./assets/i-can-do-things.svg" style="width: 80%" />
         </div>
 
-        <!-- <div
+        <div
           style="
+            padding: 20px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             text-align: center;
-            margin: 20px;
+            margin: 40px 20px 20px 20px;
           "
         >
-          Ihr Partner für Webentwicklung
-        </div> -->
+          <h1>Leistungen</h1>
+
+          <div class="xxx">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                gap: 10px;
+              "
+            >
+              <div style="text-align: left">IT Consulting</div>
+              <div style="text-align: left; font-size: 13px">
+                Beratung bei der Einführung, Wartung und Weiterentwicklung von
+                IT-Systemen
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                gap: 10px;
+              "
+            >
+              <div style="text-align: left">Full Stack Entwicklung</div>
+              <div style="text-align: left; font-size: 13px">
+                Erstellung von Software durch Verwendung von aktuellen
+                Frameworks
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                gap: 10px;
+              "
+            >
+              <div style="text-align: left">Softwarearchitektur</div>
+              <div style="text-align: left; font-size: 13px">
+                Planung und Dokumentation von Softwaresystemen
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div
           style="
